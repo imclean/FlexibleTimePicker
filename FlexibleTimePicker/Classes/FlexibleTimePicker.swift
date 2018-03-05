@@ -91,6 +91,10 @@ public class FlexibleTimePicker: UIView, FlexibleTimePickedDelegate {
     }
     
     //MARK: UI
+    public func updateWithChosen(hours:[Hour]) {
+        self.refreshUI()
+        self.collectionView.updateWith(hours: hours)
+    }
     
     public func refreshUI() {
         self.collectionView.setProperties(timeFrequency: timeFrequency,

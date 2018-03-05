@@ -60,6 +60,11 @@ class TimePickerCollectionView: UICollectionView, UICollectionViewDelegate, UICo
     
     //MARK: UI methods
     
+    func updateWith(hours:[Hour]) {
+        chosenHours = hours
+        self.reloadData()
+    }
+    
     func setProperties(timeFrequency:TimeFrequency, fromCurrentHour: Bool, startHour: Int, endHour: Int, multipleSelection:Bool, removeCellBorders:Bool, cellThickness:CGFloat, cellBorderColor:UIColor, onlyBottomBorder:Bool, scaleCellHeightToFit: Bool, cellHeight: CGFloat, cellCountPerRow: Int, cellTextColor: UIColor, cellHighlightedTextColor: UIColor, cellBackgroundColor: UIColor) {
         self.timeFrequency = timeFrequency
         self.fromCurrentHour = fromCurrentHour
