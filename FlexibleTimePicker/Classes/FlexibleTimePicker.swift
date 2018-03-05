@@ -86,7 +86,7 @@ public class FlexibleTimePicker: UIView, FlexibleTimePickedDelegate {
     
     public func timePicked(chosenHours: [Hour]) {
         self.chosenHours = chosenHours
-        self.delegate?.timePicked(chosenHours: chosenHours)
+        self.delegate?.timePicked(chosenHours: self.chosenHours)
         //print(getSelectedTimeSlots())
     }
     
