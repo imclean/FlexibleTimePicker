@@ -18,6 +18,7 @@ class ViewController: UIViewController, FlexibleTimePickedDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         self.setAvailability()
         self.flexibleTimePicker.delegate = self
+        self.view.backgroundColor = UIColor.green
         
     }
     

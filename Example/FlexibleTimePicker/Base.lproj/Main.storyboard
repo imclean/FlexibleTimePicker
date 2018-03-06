@@ -77,7 +77,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="cellBorderColor">
                                         <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cellOnlyBottomBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cellOnlyBottomBorder" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cellCountPerRow">
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
@@ -91,7 +91,7 @@
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cellBorderThickness">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="0.0"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
