@@ -256,9 +256,10 @@ class TimePickerCollectionView: UICollectionView, UICollectionViewDelegate, UICo
     }
     
     func removeChosen(cell: inout TimePickerCollectionViewCell, hour: Hour) {
-        self.setCellSelectionStyle(&cell, textColor: cellTextColor, backgroundColor: UIColor.white)
+        self.setCellSelectionStyle(&cell, textColor: cellTextColor, backgroundColor: cellBackgroundColor)
         let index = self.chosenHours.index(where: { $0.hourString == hour.hourString })
         self.chosenHours.remove(at: index!)
+        
     }
     
     //MARK: UICollectionView Delegate and Datasource methods
